@@ -5,213 +5,215 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Academic website for Aashay Mardikar."
+    content="Academic website for Aashay Mardikar, a biochemistry graduate and incoming Stanford MSTP student."
   >
   <link rel="icon" href="favicon.ico">
   <title>Aashay Mardikar</title>
-  <meta name="robots" content="noindex, nofollow">
+  <meta
+    name="robots"
+    content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+  >
+  <meta
+    name="googlebot"
+    content="noindex, nofollow, noarchive, nosnippet, noimageindex"
+  >
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <script>
+    (function() {
+      var savedTheme = null;
+      var resolvedTheme = null;
+
+      try {
+        savedTheme = localStorage.getItem("theme");
+      } catch (error) {
+        savedTheme = null;
+      }
+
+      resolvedTheme = savedTheme;
+
+      if (!resolvedTheme) {
+        resolvedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+
+      document.documentElement.dataset.theme = resolvedTheme;
+      document.documentElement.style.colorScheme = resolvedTheme;
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
 </head>
 <body>
   <div class="site-shell">
     <header class="site-header">
-      <a class="site-title" href="#top">Aashay Mardikar</a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#honors">Honors</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="brand-lockup">
+        <a class="site-title" href="#top">Aashay Mardikar</a>
+        <p class="site-kicker">Physician-Scientist in Training</p>
+      </div>
+
+      <div class="header-controls">
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#training">Training</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle between light and dark mode"
+          aria-pressed="false"
+          data-theme-toggle
+        >
+          <span class="theme-toggle-static">Theme</span>
+          <span class="theme-toggle-value" data-theme-toggle-label>Light</span>
+        </button>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <p class="eyebrow">Physician-Scientist in Training</p>
-        <h1>Aashay Mardikar</h1>
-        <p class="hero-summary">
-          Senior at the University of Rochester completing a B.S. in Biochemistry.
-          <br>
-          Incoming MD-PhD student in the Stanford MSTP.
-        </p>
-        <p class="hero-note">
-          This site highlights research experience, academic work, and ongoing projects in
-          biochemistry, translational science, and physician-scientist training.
-        </p>
-        <div class="hero-actions">
-          <a class="button-primary" href="assets/aashay-mardikar-cv.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-          <a class="button-secondary" href="#contact">Contact</a>
-        </div>
-      </section>
-
-      <section id="about" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">About</p>
-          <h2>Introduction</h2>
-        </div>
-        <div class="section-body">
-          <p>
-            I am a senior at the University of Rochester studying biochemistry, with a strong
-            interest in translational research at the interface of molecular science and medicine.
-            My long-term goal is to build a career as a physician-scientist through rigorous
-            clinical and scientific training.
-          </p>
-          <p class="placeholder-block">
-            Placeholder: replace this paragraph with a more specific 4-6 sentence biography that
-            summarizes your research focus, scientific interests, and future direction.
-          </p>
-        </div>
-      </section>
-
-      <section id="research" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">Research</p>
-          <h2>Research Experience</h2>
-        </div>
-        <div class="section-body">
-          <article class="entry">
-            <div class="entry-header">
-              <h3>Current Research Position</h3>
-              <p class="entry-meta">Lab / Department / Institution | Dates</p>
-            </div>
-            <p class="placeholder-block">
-              Placeholder: add a concise description of your current lab, research question,
-              techniques, and the broader significance of the work.
-            </p>
-          </article>
-
-          <article class="entry">
-            <div class="entry-header">
-              <h3>Prior Research Experience</h3>
-              <p class="entry-meta">Lab / Department / Institution | Dates</p>
-            </div>
-            <p class="placeholder-block">
-              Placeholder: add prior research roles, summer programs, independent projects, or
-              major collaborations. Duplicate this block as needed for additional entries.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">Projects</p>
-          <h2>Projects and Initiatives</h2>
-        </div>
-        <div class="section-body">
-          <article class="entry">
-            <div class="entry-header">
-              <h3>Project or Initiative Name</h3>
-              <p class="entry-meta">Role | Dates</p>
-            </div>
-            <p class="placeholder-block">
-              Placeholder: describe a project, initiative, student organization effort, mentoring
-              activity, or community-facing academic contribution.
-            </p>
-          </article>
-
-          <article class="entry">
-            <div class="entry-header">
-              <h3>Additional Initiative</h3>
-              <p class="entry-meta">Role | Dates</p>
-            </div>
-            <p class="placeholder-block">
-              Placeholder: add another high-signal activity that supports your academic and
-              physician-scientist profile.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">Scholarly Work</p>
-          <h2>Publications and Presentations</h2>
-        </div>
-        <div class="section-body">
-          <div class="entry">
-            <h3>Selected Publications</h3>
-            <ul class="simple-list">
-              <li class="placeholder-block">
-                Placeholder: add publications in standard academic citation format.
-              </li>
-              <li class="placeholder-block">
-                Placeholder: include manuscript status only if accurate, for example "in revision"
-                or "preprint," and link DOI or PubMed when available.
-              </li>
+    <main id="top" class="page-content">
+      <section class="hero panel">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <ul class="hero-tags" aria-label="Academic identifiers">
+              <li>University of Rochester</li>
+              <li>B.S. Biochemistry</li>
+              <li>Stanford MSTP</li>
             </ul>
+
+            <h1>Aashay Mardikar</h1>
+
+            <p class="hero-summary">
+              Aspiring physician-scientist with training in biochemistry and a strong interest in
+              rigorous, research-intensive preparation for a career spanning science and medicine.
+            </p>
+
+            <p class="hero-note">
+              Senior at the University of Rochester graduating in Spring 2026 and preparing to
+              begin MD-PhD training in the Stanford MSTP in Fall 2026.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="primary-link"
+                href="assets/aashay-mardikar-cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Curriculum Vitae
+              </a>
+              <a class="secondary-link" href="#contact">Contact</a>
+            </div>
           </div>
 
-          <div class="entry">
-            <h3>Presentations</h3>
-            <ul class="simple-list">
-              <li class="placeholder-block">
-                Placeholder: add poster presentations, talks, symposium abstracts, or conference
-                presentations.
-              </li>
-            </ul>
+          <aside class="hero-side">
+            <section class="side-block">
+              <p class="block-label">Profile</p>
+              <p class="side-callout">
+                Research-focused biochemistry student building toward long-term physician-scientist
+                training.
+              </p>
+            </section>
+
+            <section class="side-block">
+              <p class="block-label">Current Status</p>
+              <p class="side-callout">
+                University of Rochester senior completing a B.S. in Biochemistry and preparing to
+                begin MD-PhD training in the Stanford MSTP.
+              </p>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Overview</p>
+          <h2>About</h2>
+        </div>
+
+        <div class="section-body panel">
+          <p>
+            I am interested in how rigorous mechanistic and translational research can contribute
+            to clinically meaningful advances in human disease. My academic training has been
+            shaped by a commitment to scientific depth, careful scholarship, and long-term
+            preparation for a career integrating investigation with patient care.
+          </p>
+        </div>
+      </section>
+
+      <section id="training" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Education</p>
+          <h2>Training Path</h2>
+        </div>
+
+        <div class="section-body panel">
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <h3>University of Rochester</h3>
+                <p class="entry-meta">B.S. in Biochemistry | Expected Spring 2026</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <h3>Stanford MSTP</h3>
+                <p class="entry-meta">Incoming MD-PhD Student | Beginning Fall 2026</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="honors" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">Recognition</p>
-          <h2>Honors and Awards</h2>
-        </div>
-        <div class="section-body">
-          <ul class="simple-list">
-            <li class="placeholder-block">Placeholder: scholarship, fellowship, or departmental honor.</li>
-            <li class="placeholder-block">Placeholder: research award, travel award, or distinction.</li>
-            <li class="placeholder-block">Placeholder: academic recognition or society membership.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="future" class="content-section">
-        <div class="section-heading">
-          <p class="section-label">Looking Ahead</p>
-          <h2>Future Expansion</h2>
-        </div>
-        <div class="section-body">
-          <p>
-            This structure is intentionally simple so it can expand into separate pages later,
-            such as a full CV, research portfolio, writing page, or updates section.
-          </p>
-          <p class="placeholder-block">
-            Placeholder: add future sections here when needed, or split this single page into
-            dedicated pages once content grows.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" class="content-section">
+      <section id="contact" class="section-row">
         <div class="section-heading">
           <p class="section-label">Contact</p>
-          <h2>Get in Touch</h2>
+          <h2>Academic Correspondence</h2>
         </div>
-        <div class="section-body">
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <span class="placeholder-inline">aashay [dot] mardikar [at] gmail [dot] com</span></li>
-            <li><strong>LinkedIn:</strong> <span class="placeholder-inline">linkedin.com/in/aashaymardikar</span></li>
-            <li><strong>GitHub:</strong> <span class="placeholder-inline">[Add GitHub URL if desired]</span></li>
-            <li><strong>Location:</strong> TBD, TBD</li>
-          </ul>
+
+        <div class="section-body panel">
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <p>
+                To reduce simple automated scraping, the contact information below is written as
+                plain text rather than clickable links.
+              </p>
+              <p>
+                For professional inquiries, LinkedIn or email are the best ways to reach me.
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Email</span>
+                  <span>aashay [dot] mardikar [at] gmail [dot] com</span>
+                </li>
+                <li>
+                  <span class="contact-label">LinkedIn</span>
+                  <span>linkedin.com/in/aashaymardikar</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Aashay Mardikar</p>
-      
-      
-      <p style="color:#777; font-size:0.9em;">
-      © 2026 Aashay Mardikar
-      </p>
-
+      <p class="footer-name">Aashay Mardikar</p>
       <p class="footer-note">
-        Last updated: <span>March 2026</span>.
+        Minimal academic website for professional use. Light and dark themes available. Last
+        updated April 2026.
       </p>
     </footer>
   </div>
