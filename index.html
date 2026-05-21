@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Academic website for Aashay Mardikar, a biochemistry graduate and incoming Stanford MSTP student."
+    content="Personal site of Aashay Mardikar — biochemist interested in molecular mechanisms of disease, therapeutic translation, and the ethics of medicine."
   >
   <link rel="icon" href="favicon.ico">
   <title>Aashay Mardikar</title>
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,ital,wght@6..72,0,500;6..72,0,600;6..72,0,700;6..72,1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
   <script>
@@ -59,8 +59,11 @@
       <div class="header-controls">
         <nav class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#training">Training</a>
-          <a href="#contact">Contact</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#translation">Translation</a>
+          <a href="#honors">Honors</a>
+          <a href="#service">Service</a>
         </nav>
 
         <button
@@ -81,31 +84,109 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <ul class="hero-tags" aria-label="Academic identifiers">
-              <li>University of Rochester</li>
               <li>Stanford University</li>
+              <li>University of Rochester</li>
             </ul>
 
             <h1>Aashay Mardikar</h1>
 
             <p class="hero-note">
-              Senior at the University of Rochester graduating in Spring 2026 and preparing to
-              begin MD-PhD training in the Stanford MSTP in Fall 2026.
+              Biochemist interested in how molecular mechanisms of disease inform drug discovery, clinical questions, and the broader systems of care. I recently graduated from the University of Rochester (Biochemistry) and will begin MD-PhD
+              training in the Stanford Medical Scientist Training Program in Aug
+              2026.
             </p>
 
-            <div class="hero-actions">
+            <div class="hero-links" aria-label="Primary links">
               <a
-                class="primary-link"
-                href="assets/aashay-mardikar-cv.pdf"
+                class="hero-link"
+                href="mailto:aashay.mardikar@gmail.com"
+                aria-label="Email"
+                title="Email"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3.75 6.75h16.5A1.5 1.5 0 0 1 21.75 8.25v7.5a1.5 1.5 0 0 1-1.5 1.5H3.75a1.5 1.5 0 0 1-1.5-1.5v-7.5a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="m4.25 7.35 7.14 6.02a.95.95 0 0 0 1.22 0l7.14-6.02" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a
+                class="hero-link"
+                href="https://scholar.google.com/citations?user=FUTsgDgAAAAJ&amp;hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Google Scholar"
+                title="Google Scholar"
               >
-                Curriculum Vitae
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3 1.75 8.6 12 14.2 22.25 8.6 12 3Z" fill="currentColor"/>
+                  <path d="M5.75 10.55v4.15c0 1.68 3.05 3.05 6.25 3.05s6.25-1.37 6.25-3.05v-4.15L12 14.2l-6.25-3.65Z" fill="currentColor" opacity="0.78"/>
+                </svg>
               </a>
-              <a class="secondary-link" href="#contact">Contact</a>
+              <a
+                class="hero-link"
+                href="https://www.linkedin.com/in/aashaymardikar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.35 8.35a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9Zm-1.2 2.15h2.4v8.35h-2.4V10.5Zm4.25 0h2.3v1.18h.04c.32-.58 1.12-1.4 2.56-1.4 2.74 0 3.25 1.8 3.25 4.13v4.44h-2.4v-3.94c0-.94-.02-2.15-1.31-2.15-1.31 0-1.51 1.03-1.51 2.08v4.01h-2.4V10.5Z" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-connect">
+              <p class="hero-connect-title">Current Focus</p>
+              <p>
+                My work centers on three linked questions: how molecular
+                mechanisms of disease are uncovered, how those mechanisms can be
+                translated into therapeutics and tools, and how ethical and policy decisions
+                shape which interventions ultimately reach patients.
+              </p>
+              <p>
+                If you&apos;re thinking about research, MD-PhD training, or adjacent
+                questions in science and medicine, I&apos;m always glad to connect!
+              </p>
             </div>
           </div>
 
           <aside class="hero-side">
+            <figure class="hero-portrait">
+              <img
+                src="assets/mardikar_aashay.jpg"
+                alt="Portrait of Aashay Mardikar"
+                width="320"
+                height="320"
+                loading="eager"
+                decoding="async"
+              >
+            </figure>
+
+            <div class="side-block">
+              <p class="block-label">Selected Updates</p>
+              <ul class="news-list">
+                <li>
+                  <span class="news-date">Aug 2026</span>
+                  <span class="news-item">Beginning Stanford MSTP</span>
+                </li>
+                <li>
+                  <span class="news-date">May 2026</span>
+                  <span class="news-item">Received my B.S. in Biochemistry, University of Rochester</em></span>
+                </li>
+                <li>
+                  <span class="news-date">Dec 2025</span>
+                  <span class="news-item">Churchill Scholarship Alternate</span>
+                </li>
+                <li>
+                  <span class="news-date">Nov 2025</span>
+                  <span class="news-item">Review published in <em>Expert Review of Respiratory Medicine</em></span>
+                </li>
+                <li>
+                  <span class="news-date">Oct 2025</span>
+                  <span class="news-item">Rhodes Scholarship Finalist</span>
+                </li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>
@@ -118,10 +199,22 @@
 
         <div class="section-body panel">
           <p>
-            I am interested in how rigorous mechanistic and translational research can contribute
-            to clinically meaningful advances in human disease. My academic training has been
-            shaped by a commitment to scientific depth, careful scholarship, and long-term
-            preparation for a career integrating investigation with patient care.
+            I'm a biochemist beginning MD-PhD training in the Stanford Medical
+            Scientist Training Program. My work has lived in three overlapping spaces:
+            the <b>molecular mechanisms of human disease</b> — most recently RNA biology and
+            tRNA modification in the Fu Lab, previously antimicrobial resistance in
+            the Dunman Lab; the <b>translation of those mechanisms toward clinical impact</b> —
+            through both wet-lab research and VAPGuard, a medical device venture;
+            and the <b>ethics and policy of drug discovery</b> — particularly how antimicrobials, and broadly all medicines,
+            reach patients, in collaboration with the Department of Philosophy at URochester.
+          </p>
+          <p>
+            Teaching and mentorship are part of how I think about that work. I
+            co-founded and continue to develop Qubix, an exam-review platform now used
+            by 500+ students across STEM courses at URochester.
+          </p>
+          <p>
+            When I&apos;m not in the lab, I love playing the violin and piano in chamber ensembles and orchestras. You can also find me cooking, reading, or at the driving range.
           </p>
         </div>
       </section>
@@ -133,49 +226,584 @@
         </div>
 
         <div class="section-body panel">
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <h3>University of Rochester</h3>
-                <p class="entry-meta">B.S. in Biochemistry | Expected Spring 2026</p>
+          <div class="training-list">
+            <article class="training-item">
+              <div class="training-primary">
+                <div class="training-logo-slot training-logo-slot-stanford">
+                  <img
+                    class="training-logo-inline training-logo-inline-stanford"
+                    src="assets/stanford-logo.avif"
+                    alt="Stanford logo"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div class="training-copy">
+                  <h3>Stanford University</h3>
+                  <p class="entry-meta">MD-PhD, Medical Scientist Training Program</p>
+                </div>
+              </div>
+              <div class="training-secondary">
+                <p class="training-location">Stanford, CA</p>
+                <p class="training-date">Beginning Aug 2026</p>
               </div>
             </article>
 
-            <article class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-card">
-                <h3>Stanford University</h3>
-                <p class="entry-meta">Incoming MD-PhD Student | Beginning Fall 2026</p>
+            <article class="training-item">
+              <div class="training-primary">
+                <div class="training-logo-slot">
+                  <img
+                    class="training-logo-inline training-logo-inline-rochester training-logo-theme-light"
+                    src="assets/rochester-shield.png"
+                    alt="University of Rochester shield"
+                    width="318"
+                    height="416"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <img
+                    class="training-logo-inline training-logo-inline-rochester training-logo-theme-dark"
+                    src="assets/rochester-shield-white.png"
+                    alt="University of Rochester shield"
+                    width="319"
+                    height="416"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div class="training-copy">
+                  <h3>University of Rochester</h3>
+                  <p class="entry-meta">B.S. in Biochemistry</p>
+                </div>
+              </div>
+              <div class="training-secondary">
+                <p class="training-location">Rochester, NY</p>
+                <p class="training-date">May 2026</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section-row">
+      <section id="research" class="section-row">
         <div class="section-heading">
-          <p class="section-label">Contact</p>
-          <h2>Academic Correspondence</h2>
+          <p class="section-label">Inquiry</p>
+          <h2>Research</h2>
         </div>
 
         <div class="section-body panel">
-          <div class="contact-grid">
-            <div class="contact-copy">
+          <article class="record">
+            <div class="record-head">
+              <div>
+                <h3>Fu Lab, URochester</h3>
+                <p class="entry-meta">Researcher, Department of Biology · May 2024 – May 2026</p>
+              </div>
+            </div>
+            <div class="record-body">
               <p>
-                For professional inquiries, LinkedIn or email are the best ways to reach me.
+                Studied how disease-associated METTL2 variants disrupt tRNA
+                modification and what that reveals about RNA biology in human
+                pathology. Supported by the Beckman Scholars Program, I
+                biochemically characterized the binding and functional
+                properties of the METTL2 complex and its variants.
               </p>
             </div>
+          </article>
 
-            <div class="contact-card">
-              <ul class="contact-list">
+          <article class="record">
+            <div class="record-head">
+              <div>
+                <h3>Dunman Lab, URMC</h3>
+                <p class="entry-meta">Researcher, Department of Microbiology &amp; Immunology · Oct 2022 – Apr 2024</p>
+              </div>
+            </div>
+            <div class="record-body">
+              <p>
+                Focused on antimicrobial discovery against MRSA by identifying
+                small-molecule inhibitors of penicillin-binding protein 4. I
+                optimized and performed a high-throughput screen of 28,000
+                compounds as candidate inhibitors.
+              </p>
+            </div>
+          </article>
+
+          <article class="record">
+            <div class="record-head">
+              <div>
+                <h3>Clinical Trial Ethics, URochester</h3>
+                <p class="entry-meta">Researcher, Department of Philosophy · Aug 2023 – May 2026</p>
+              </div>
+            </div>
+            <div class="record-body">
+              <p>
+                Examined when clinical trials for potential antibiotics are
+                ethically justified, especially under conditions of uncertainty
+                and unmet need. Supported by the Meliora Scholars Program, I
+                worked with Dr. Richard Dees on the ethics of antimicrobial
+                clinical trials.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Output</p>
+          <h2>Publications &amp; Presentations</h2>
+        </div>
+
+        <div class="section-body panel">
+          <p class="micro-note corresponding-key">† corresponding author</p>
+
+          <ol class="citation-list">
+            <li>
+              <span class="cite-status">Under Review</span>
+              Mardikar, A.† (2026).
+              <em>Anticipatory Antibiotics as Preventive Medicine: The Ethics of Proactive Clinical Trials.</em>
+            </li>
+            <li>
+              <span class="cite-status">In preparation</span>
+              Mardikar, A., Gondil, V. S., &amp; Dunman, P. M.† (2025).
+              <em>High-throughput screening for Staphylococcus aureus PBP4
+              small-molecule inhibitors.</em>
+            </li>
+            <li>
+              Mardikar, A.†, Ramanan, S., Stephen, M., Graham, R. J., &amp; Gunturi,
+              A. (2025). The promise of blue light in combating ventilator-associated
+              pneumonia. <em>Expert Review of Respiratory Medicine</em>, 20(5), 501–511.
+              <a
+                class="cite-doi"
+                href="https://doi.org/10.1080/17476348.2025.2587311"
+                target="_blank"
+                rel="noopener noreferrer"
+              >doi.org/10.1080/17476348.2025.2587311</a>
+            </li>
+            <li>
+              Gondil, V. S., Butman, H. S., Young, M., Walsh, D. J., Narkhede, Y.,
+              Zeiler, M. J., Crow, A. H., Carpenter, M. E., Mardikar, A., Melander,
+              R. J., Wiest, O.†, Dunman, P. M.†, &amp; Melander, C.† (2024).
+              Development of phenylurea-based small molecules that target
+              penicillin-binding protein 4. <em>Chemical Biology &amp; Drug Design,</em>
+              103(6), e14569.
+              <a
+                class="cite-doi"
+                href="https://doi.org/10.1111/cbdd.14569"
+                target="_blank"
+                rel="noopener noreferrer"
+              >doi.org/10.1111/cbdd.14569</a>
+            </li>
+            <li>
+              Senanayaka, D., Zeng, D., Deniz, E., Priyankara, I. K., Helmbreck, J.,
+              Schneider, O., Mardikar, A., Uren, A., &amp; Reiter, N. J.† (2024).
+              Anticancer drugs of Lysine Specific Histone Demethylase-1 (LSD1)
+              display variable inhibition on nucleosome substrates.
+              <em>Biochemistry,</em> 63(11), 1369–1375.
+              <a
+                class="cite-doi"
+                href="https://doi.org/10.1021/acs.biochem.4c00090"
+                target="_blank"
+                rel="noopener noreferrer"
+              >doi.org/10.1021/acs.biochem.4c00090</a>
+            </li>
+            <li>
+              Slick, R. A., Sutton, J., Haberman, M., O'Brien, B. S., Tinklenberg,
+              J. A., Mardikar, A., Prom, M. J., Beatka, M., Gartz, M., Vanden Avond,
+              M. A., Siebers, E., Mack, D. L., Gonzalez, J. P., Ebert, A. D.,
+              Nagaraju, K., &amp; Lawlor, M. W.† (2024). High mobility group box 1
+              (HMGB1) is a potential disease biomarker in cell and mouse models of
+              Duchenne muscular dystrophy. <em>Biology Open,</em> 13(9), bio060542.
+              <a
+                class="cite-doi"
+                href="https://doi.org/10.1242/bio.060542"
+                target="_blank"
+                rel="noopener noreferrer"
+              >doi.org/10.1242/bio.060542</a>
+            </li>
+          </ol>
+
+          <div class="subsection presentations-block">
+            <h3>Presentations</h3>
+
+            <p class="presentations-label">Oral</p>
+            <ul class="compact-list">
+              <li>
+                Mardikar, A., Berger, K. D., &amp; Fu, D.
+                <em>Impaired Assembly and Catalysis of a tRNA 3-Methylcytosine
+                Modification Complex Caused by Neurodevelopmental Disorder-Associated
+                METTL2 Variants.</em>
+                Goldwater Summit,
+                Houston, TX. Oct 2025.
+              </li>
+            </ul>
+
+            <p class="presentations-label">Selected Posters</p>
+            <ul class="compact-list">
+              <li>Annual Beckman Symposium, Irvine, CA. Aug 2025.</li>
+              <li>30th Annual Meeting of the RNA Society, San Diego, CA. May 2025.</li>
+              <li>AAP/ASCI/APSA Joint Meeting, Chicago, IL. Apr 2025.</li>
+              <li>AAP/ASCI/APSA Joint Meeting, Chicago, IL. Apr 2024.</li>
+              <li>
+                Southeastern Medical Scientist Symposium, Emory University School of
+                Medicine, Atlanta, GA. Nov 2023.
+              </li>
+              <li>The 33rd Annual Buffalo Conference on Microbial Pathogenesis, Buffalo, NY, May 2023.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="translation" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Translation</p>
+          <h2>Translation &amp; Initiatives</h2>
+        </div>
+
+        <div class="section-body panel">
+          <article class="record">
+            <div class="record-head">
+              <div>
+                <h3 class="brand-heading">
+                  <img
+                    class="brand-logo brand-logo-qubix"
+                    src="assets/qubix-logo.png"
+                    alt="Qubix logo"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <span>Qubix</span>
+                </h3>
+                <p class="entry-meta">Co-Founder &amp; Lead Developer · Aug 2024 – Present</p>
+              </div>
+            </div>
+            <div class="record-body">
+              <p>
+                Qubix grew out of an interest in how students learn difficult
+                scientific material and how feedback can be made more useful at
+                scale. Developed with faculty and the URochester
+                web-applications team, the platform is now used by 1000+
+                students across multiple STEM courses. I continue to lead
+                development and the Qubix TA team as it expands into new
+                courses, with usage correlating significantly with improved exam
+                outcomes in classes that adopt it.
+              </p>
+            </div>
+          </article>
+
+          <article class="record">
+            <div class="record-head">
+              <div>
+                <h3 class="brand-heading">
+                  <img
+                    class="brand-logo brand-logo-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="48"
+                    height="39"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                  <span>VAPGuard</span>
+                </h3>
+                <p class="entry-meta">Co-Founder · Oct 2023 – 2026</p>
+              </div>
+            </div>
+            <div class="record-body">
+              <p>
+                VAPGuard grew out of an interest in translating microbiology and
+                mechanistic thinking into preventive tools for patient care. As
+                co-founder and CEO, I advanced the venture through NSF I-Corps,
+                Launch NY mentorship, and prototype testing with the URMC
+                Department of Microbiology &amp; Immunology in collaboration with
+                Dr. Timothy M. Baran. The work also resulted in a scholarly
+                <a
+                  class="inline-article-link"
+                  href="https://doi.org/10.1080/17476348.2025.2587311"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >published review in <em>Expert Review of Respiratory Medicine</em></a>
+                on blue light technologies and VAP prevention, alongside the
+                regional and national recognition listed below.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="honors" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Recognition</p>
+          <h2>Honors &amp; Awards</h2>
+        </div>
+
+        <div class="section-body panel">
+          <div class="subsection">
+            <h3>National</h3>
+            <ul class="honor-list">
+              <li>
+                <span class="honor-year">Dec 2025</span>
+                <div>
+                  <strong>Churchill Scholarship Alternate</strong>
+                  <p>One of four U.S. alternates for postgraduate study at the University of Cambridge.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Oct 2025</span>
+                <div>
+                  <strong>Rhodes Scholarship Finalist</strong>
+                  <p>Finalist for postgraduate study at the University of Oxford.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Mar 2025</span>
+                <div>
+                  <strong>Goldwater Scholar</strong>
+                  <p>National scholarship recognizing undergraduate excellence in STEM research.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">May 2024</span>
+                <div>
+                  <strong>Beckman Scholar</strong>
+                  <p>Two-year, $26,000 research fellowship from the Arnold and Mabel Beckman Foundation.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subsection">
+            <h3>Campus</h3>
+            <ul class="honor-list">
+              <li>
+                <span class="honor-year">Apr 2025</span>
+                <div>
+                  <strong>Phi Beta Kappa — Junior Elect</strong>
+                  <p>1 of 11 juniors elected from a class of 1,500+.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Nov 2023</span>
+                <div>
+                  <strong>Phi Beta Kappa Suzanne J. O'Brien Book Award</strong>
+                  <p>1 of 15 students recognized for distinguished early scholarship.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Mar 2022</span>
+                <div>
+                  <strong>Whipple Science and Research Scholarship</strong>
+                  <p>URochester scholarship awarded to incoming students with strong research potential.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="subsection">
+            <h3>Grants, Travel Awards &amp; Pitch Competitions</h3>
+            <ul class="honor-list">
+              <li>
+                <span class="honor-year">Oct 2025</span>
+                <div>
+                  <strong>Outstanding Presentation Award</strong>
+                  <p>For a presentation on METTL2 variants at the Goldwater Summit, Rice University.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Jun 2025</span>
+                <div>
+                  <strong>RNA Society Poster Prize</strong>
+                  <p>Poster prize awarded at the 30th Annual Meeting of the RNA Society.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">Apr 2025</span>
+                <div>
+                  <strong>AAP/ASCI/APSA Joint Meeting Travel Award</strong>
+                  <p>Travel award supporting attendance at the joint physician-scientist meeting in Chicago.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Apr 2025</span>
+                  <img
+                    class="honor-mark honor-mark-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="22"
+                    height="18"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>New York Business Plan Competition — 2nd Prize</strong>
+                  <p>Second prize in New York&apos;s statewide student venture competition.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Mar 2025</span>
+                  <img
+                    class="honor-mark honor-mark-qubix"
+                    src="assets/qubix-logo.png"
+                    alt="Qubix logo"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>Teaching Innovation Grant</strong>
+                  <p>URochester grant supporting expansion of the Qubix platform.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Jan 2025</span>
+                  <img
+                    class="honor-mark honor-mark-qubix"
+                    src="assets/qubix-logo.png"
+                    alt="Qubix logo"
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>Educational IT Innovation Grant</strong>
+                  <p>University IT funding to expand Qubix infrastructure.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Jun 2024</span>
+                  <img
+                    class="honor-mark honor-mark-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="22"
+                    height="18"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>Hult Prize Summits Global Finalist</strong>
+                  <p>Global finalist, top 40 of 10,000+ teams in the Hult Prize competition.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">May 2024</span>
+                  <img
+                    class="honor-mark honor-mark-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="22"
+                    height="18"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>Mark Ain Business Model Competition — 1st Prize</strong>
+                  <p>First prize in URochester&apos;s flagship business model competition.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Apr 2024</span>
+                  <img
+                    class="honor-mark honor-mark-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="22"
+                    height="18"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>New York Business Plan Competition — 2nd Prize</strong>
+                  <p>Second prize in New York&apos;s statewide student venture competition.</p>
+                </div>
+              </li>
+              <li>
+                <div class="honor-meta">
+                  <span class="honor-year">Nov 2023</span>
+                  <img
+                    class="honor-mark honor-mark-vapguard"
+                    src="assets/vapguardlogo-final.png"
+                    alt="VAPGuard logo"
+                    width="22"
+                    height="18"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
+                <div>
+                  <strong>Patient Safety &amp; Technology Challenge — Grand Prize</strong>
+                  <p>Grand prize for a student-led patient-safety technology venture.</p>
+                </div>
+              </li>
+              <li>
+                <span class="honor-year">May 2023</span>
+                <div>
+                  <strong>Meliora Scholar (Independent Research)</strong>
+                  <p>URochester support for independent humanities research.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="section-row">
+        <div class="section-heading">
+          <p class="section-label">Beyond the Lab</p>
+          <h2>Service &amp; Teaching</h2>
+        </div>
+
+        <div class="section-body panel">
+          <div class="dual-grid">
+            <div class="subsection">
+              <h3>Professional Service</h3>
+
+              <ul class="service-list">
                 <li>
-                  <span class="contact-label">Email</span>
-                  <span>aashay [dot] mardikar [at] gmail [dot] com</span>
+                  <strong>Dean of Libraries National Search Committee</strong>
+                  <span class="entry-meta">URochester · Apr–Dec 2025</span>
+                  <p>
+                    Appointed by the Provost to represent undergraduates in a national
+                    search for the Dean of Libraries; served alongside University
+                    leadership, faculty, and trustees.
+                  </p>
                 </li>
                 <li>
-                  <span class="contact-label">LinkedIn</span>
-                  <span>linkedin.com/in/aashaymardikar</span>
+                  <strong>Peer Reviewer</strong>
+                  <span class="entry-meta"><em>Journal of Clinical Medicine Research</em></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="subsection">
+              <h3>Teaching &amp; Mentorship</h3>
+              <ul class="teaching-list">
+                <li>
+                  <strong>Advanced Laboratory Grader</strong>
+                  <span>URochester Dept. of Biochemistry &amp; Biophysics · Jan–May 2025</span>
+                </li>
+                <li>
+                  <strong>Workshop Leader</strong>
+                  <span>URochester Dept. of Chemistry · Aug 2023 – Dec 2024</span>
+                </li>
+                <li>
+                  <strong>Tutor</strong>
+                  <span>URochester Learning Center · Oct 2023 – Dec 2025</span>
                 </li>
               </ul>
             </div>
