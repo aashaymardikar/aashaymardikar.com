@@ -17,6 +17,7 @@
   --border-strong: rgba(54, 38, 21, 0.2);
   --accent: #7a2231;
   --accent-soft: rgba(122, 34, 49, 0.12);
+  --author-highlight-accent: #0d6f7d;
   --shadow-lg: 0 24px 70px rgba(22, 16, 10, 0.08);
   --shadow-md: 0 16px 34px rgba(22, 16, 10, 0.05);
   --shadow-portrait: 0 30px 60px rgba(22, 16, 10, 0.18);
@@ -44,6 +45,7 @@ html[data-theme="dark"] {
   --border-strong: rgba(224, 234, 248, 0.22);
   --accent: #d5a2ad;
   --accent-soft: rgba(213, 162, 173, 0.16);
+  --author-highlight-accent: #7fd3df;
   --shadow-lg: 0 28px 80px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 18px 40px rgba(0, 0, 0, 0.28);
   --shadow-portrait: 0 30px 60px rgba(0, 0, 0, 0.55);
@@ -872,6 +874,18 @@ html[data-theme="dark"] .training-logo-theme-dark {
   font-size: 0.66rem;
   letter-spacing: 0.12em;
   vertical-align: 0.15em;
+}
+
+.corresponding-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.author-highlight {
+  color: var(--author-highlight-accent);
+  font-weight: 600;
 }
 
 .cite-doi {
