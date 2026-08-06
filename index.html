@@ -39,6 +39,20 @@
   </script>
   <link rel="stylesheet" href="styles.css">
   <script src="theme.js" defer></script>
+
+  <!--
+    Cookieless analytics. data-domains keeps local previews and any forks off
+    the dashboard, so only real traffic to the live domain is counted.
+    analytics.js also speaks Plausible and GoatCounter if you ever switch
+    providers; only the tag below would need to change.
+  -->
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="4875b907-b779-4cea-aba7-02a6fdca7b14"
+    data-domains="aashaymardikar.com"
+  ></script>
+  <script src="analytics.js" defer></script>
 </head>
 <body>
   <div class="site-shell">
